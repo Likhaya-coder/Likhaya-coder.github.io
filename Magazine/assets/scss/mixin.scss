@@ -1,0 +1,115 @@
+@mixin heading {
+    font-size: 26px;
+    line-height: 40px;
+    color: #020004;
+    margin-bottom: 30px;
+    text-transform: uppercase;  
+    text-align: center;
+    padding-top: 40px;
+}
+@mixin headSpan {
+    color: #1808f3e7;
+    font-weight: 700;
+}
+@mixin bParagraph {
+    color: #232222;
+    text-decoration: none;
+    background-color: transparent;
+}
+@mixin h5BP {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+@mixin h4SP {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+@mixin lightP {
+    line-height: 1.5;
+    font-size: 14px;
+    color: #777;
+  }
+
+  @mixin background {
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+      width: 90% !important;
+      height: 80vh !important;
+      margin: 0 auto;
+      border-radius: 4px;
+      margin-bottom: 160px;
+  }
+  @mixin category {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: 20px;
+}
+@mixin desktop {
+    width: 180px !important;
+    height: 100px !important;
+    margin-right: 20px;
+}
+@mixin category-p {
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+@mixin post-item {
+    width: 16rem;
+    margin-left: 30px;
+}
+  /*@include transparency {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }*/
+@mixin text {
+    display: block;
+    margin-top: 20px;
+    color: #000;
+    margin-top: 20px;
+    cursor: pointer;
+    &:hover {
+        color: $pinkish;
+    }
+}
+@mixin date {
+    margin-top: 20px;
+    color: rgb(158, 156, 156);
+    font-size: 12px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+@mixin link {
+    margin-top: 20px;
+    color: $pinkish;
+    &:hover {
+        color: #000;
+    }
+}
+
+@mixin imgSideContent {
+    width: 65%;
+    padding-left: 20px;
+}
+
+@mixin parentFormat {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 30px;
+    margin-bottom: 30px;
+}
