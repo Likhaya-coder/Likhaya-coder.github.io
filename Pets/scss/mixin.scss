@@ -1,0 +1,77 @@
+@mixin heading {
+    color: #fff;
+    line-height: 1.2;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+@mixin smaller-heading {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+@mixin small-heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+@mixin header-3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    text-align: center !important;
+}
+
+@mixin dark-text {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
+@mixin light-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+@mixin card__wrapper {
+    position: relative;
+    top: -55px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    margin: auto;
+    background: url(../images/gallery-6.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border: 3px solid black;
+}
+
+@mixin calc-text {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@mixin calc-content {
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+}
