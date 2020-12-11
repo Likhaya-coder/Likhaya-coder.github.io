@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.logo {
+    background-color: #000;
+    padding: 20px 0px;
+    border-top: 4px solid orangered;
+    border-bottom: 4px solid orangered;
+}
+
+.navbar-dark {
+    background-color: rgba(255, 38, 0, 0.925) !important;
+}
+.navbar-toggler-icon {
+    background-color: rgba(255, 38, 0, 0.925) !important;
+    color: white !important;
+}
+button {
+    border: 1px solid white !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
+.navbar-dark .navbar-nav .nav-link.active:hover {
+    color: rgb(179, 174, 174);
+}
+.nav_form button {
+    color: #fff;
+}
+
+.banner img {
+    width: 100vw;
+    height: 140%;
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.banner-content h2, .banner-content h3{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.banner-content .target{
+    background-color: red;
+    padding: 5px;
+}
+
+.banner-content .btn {
+    background-color: #fff;
+    color: red;
+    font-size: 18px;
+    border-radius: 0;
+}
+
+.banner-content .btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.features {
+    padding-top: 100px;
+}
+.features h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    padding-top: 10px;
+}
+.features p {
+    width: 80%;
+    font-size: 18px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.aboutus .img__1 img {
+    width: 100%;
+    height: 60%;  
+    margin: 0 auto;
+}
+.aboutus .img__2 {
+    width: 100%;
+    height: 75%;
+    margin: 60px auto 0 auto;
+    background-color: orangered;
+}
+.aboutus .img__2 img {
+    width: 40vw;
+    height: 40%;
+    padding: 30px 0px 0px 40px;
+}
+.aboutus .img__2 h4 {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    font-weight: 600;
+}
+.aboutus .img__2 p {
+    color: #fff;
+    padding: 0 20px 20px 20px;
+}
+.aboutus .btn {
+    background-color: #fff;
+    color: orangered;
+    font-size: 16px;
+    padding: 16px 40px;
+    border-radius: 0;
+}
+.aboutus .btn:hover {
+    background-color: #000;
+    color: rgb(192, 54, 4);
+}
+
+.news h1 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.news p {
+    font-size: 14px;
+    color: #000;
+}
+
+.cards {
+    width: 100%;
+    margin: 0 auto;
+}
+.cards img {
+    width: 100%;
+}
+.cards .card-1, .cards .card-2, .cards .card-3{
+    box-shadow: 1px 1px 7px grey;
+}
+.cards h5 {
+    color: #000;
+    font-size: 24px;
+    padding: 10px 15px 0 15px;
+}
+.cards .date {
+    color: red;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+.cards span {
+    padding-left: 20px;
+}
+.cards p {
+    padding: 0 20px 20px 20px;
+    color: rgb(124, 120, 120)
+}
+
+.albums-box h1 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 3.6em;
+}
+
+.albums-box p {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+
+.albums-box img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contacts {
+    background-color: orangered;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+
+.contacts h3 {
+    color: #fff;
+    padding: 20px 0 0 0px;
+    font-size: x-large;
+}
+
+.contacts input {
+    width: 100%;
+    height: 50px;
+}
+
+.contacts .btn {
+    background-color: #000;
+    color: #fff;
+    padding: 8.2px 20px;
+    border-radius: 0;
+}
+
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 60px 20px;
+    font-size: 18px;
+}
+.footer .fa {
+    font-size: 20px;
+    padding-right: 15px;
+}
+.footer .socials .fab {
+    font-size: 30px;
+	padding: 40px 5px 30px 0;
+    cursor: pointer;
+}
+.footer .socials a {
+    color: white;
+}
+.footer .socials .fab:hover {
+    color: orangered;
+}
+
+.footer .form input {
+    margin: 20px 0;
+    padding: 25px;
+    font-size: 14px;
+}
+.footer .form textarea {
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.footer .form .btn {
+    background-color: #fff;
+    color: orangered;
+    margin: 18px auto;
+    padding: 12px 45px;
+    border-radius: 5px;
+}
+.footer .form .btn:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+.footer .new_music img {
+    width: 20%;
+    margin: 20px 20px;
+}
+
+.copyright {
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    color: #000;
+}
