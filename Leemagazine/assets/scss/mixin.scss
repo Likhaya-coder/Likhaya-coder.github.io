@@ -17,9 +17,10 @@
     background-color: transparent;
 }
 @mixin h5BP {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    font-family: 'Playfair Display', serif;
 }
 @mixin h4SP {
     font-size: 16px;

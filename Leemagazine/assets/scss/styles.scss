@@ -32,9 +32,8 @@
 }
 
 #sidebar {
-    width: 300px;
+    width: 100%;
     height: calc(100% - 90px);
-    background-color: #000;
     position: fixed;
     top: 90px;
     left: 0;
@@ -42,7 +41,17 @@
     right: 0;
     visibility: hidden;
     z-index: 1000;
-    
+    transition: all ease-in-out 0.9s;
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 90px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
     .background-img {
         width: 100%;
         height: 100vh;
@@ -52,7 +61,7 @@
         background-size: cover;
     }
     ul {
-        padding-top: 14.3rem;
+        padding-top: 10.3rem;
     }
     ul li {
         @include h4SP;
@@ -87,6 +96,23 @@
         height: 50vh !important;
         margin-bottom: 60px;
     }
+    .news_article div a{
+        position: relative;
+        transition-property: transform;
+        transition-duration: 1s;
+        //visibility: hidden;
+    }
+    /*.article1 div a{
+        position: relative;
+        animation-name: imgText;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        //visibility: hidden;
+    }
+    @keyframes imgText {
+        0% {top: -30px;}
+        100% {top: 20px;}
+    }*/
     .article2 {
         background-image: url(../images/grid7.jpg);
         @include background;
@@ -121,6 +147,7 @@
         &:hover {
             color: $pinkish;
             transition: all 300ms ease-in-out;
+            transform: translateY(-20px);
         }
     }
     .text {
@@ -147,7 +174,7 @@
         background-image: url(../images/grid3.jpg);
         @include background;
     }
-    .wrapper .article__container1 .section2 div {
+    .wrapper .article__container1 .section2 div{
         width: 100%;
         height: 100%;
         position: relative;
@@ -158,11 +185,26 @@
             background-color: rgba(0, 0, 0, 0.1);
             transition: all 300ms ease-in-out;
         }
+        .section2 {
+            position: relative;
+            transition-property: transform;
+            transition-duration: 1s;
+            font-size: 14px;
+        }
         a {
-            display: flex;
-            justify-content: center;
-            color: white;
-            font-size: 1.1rem;
+            color: #fff;
+            position: relative;
+            top: 50%;
+            display: block;
+            text-align: center;
+            position: relative;
+            transition-property: transform;
+            transition-duration: 1s;
+            @include h5BP;
+            &:hover {
+                color: $pinkish;
+                transform: translateY(-20px);
+            }
         }
     }
     .article__container2 {
@@ -228,10 +270,19 @@
                 transition: all 300ms ease-in-out;
             }
             a {
-                display: flex;
-                justify-content: center;
-                color: white;
-                font-size: 1.1rem;
+                color: #fff;
+                position: relative;
+                top: 50%;
+                display: block;
+                text-align: center;
+                position: relative;
+                transition-property: transform;
+                transition-duration: 1s;
+                @include h5BP;
+                &:hover {
+                    color: $pinkish;
+                    transform: translateY(-20px);
+                }
             }
         }
         .text {
@@ -378,9 +429,13 @@
         display: block;
         text-align: center;
         @include h5BP;
+        position: relative;
+        transition-property: transform;
+        transition-duration: 1s;
         &:hover {
             color: $pinkish;
             transition: all 300ms ease-in-out;
+            transform: translateY(-20px);
         }
     }
     .text {
@@ -583,8 +638,8 @@
 #subs {
     width: 95%;
     height: 40%;
-    margin: 0 auto;
     background-color: rgb(28, 28, 124);
+    margin: 0 auto;
     .wrapper {
         background-image: url(../images/strip.png);
         @include background;
@@ -603,12 +658,14 @@
         color: rgb(28, 28, 124);
     }
     .wrapper input {
+        width: 90%;
+        height: 60px;
         display: block;
         margin-top: 50px !important;
-        padding: 20px 100px;
         font-weight: 600;
         color: rgb(28, 28, 124);
         position: relative;
+        padding-left: 20px;
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -616,13 +673,13 @@
         border: 2px solid  rgb(81, 133, 230);
     }
     .wrapper a {
+        width: 90%;
         display: block;
         padding: 15px 30px;
         font-weight: 600;
         background-color: rgb(242, 15, 250);
         color: rgb(28, 28, 124);
         text-align: center;
-        width: 90%;
         margin: 0 auto;
     }
 }
@@ -901,6 +958,14 @@
             }
         }
     }
+    #subs {
+        height: 50%;
+
+        .wrapper p {
+            margin-top: 50px;
+            padding-top: 50px;
+        }
+    }
 }
 
 
@@ -935,6 +1000,15 @@
         width: 25rem !important;
         margin-left: 30px !important;
         font-size: 14px;
+    }
+    #subs {
+        width: 95%;
+        height: 60%;
+
+        .wrapper p {
+            margin-top: 70px;
+            padding-top: 70px;
+        }
     }
 }
 
@@ -1050,6 +1124,29 @@
         margin-top: -500px;
         margin-left: -40px;
     }
+    #tech {
+        .wrapper {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+    #subs {
+        width: 95%;
+        height: 70%;
+
+        .wrapper p {
+            padding-top: 90px;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .wrapper input {
+            width: 85%;
+            margin-top: 110px !important;
+        }
+        .wrapper a {
+            width: 85%;
+        }
+    }
     #footer {
         .container {
             height: 80%;
@@ -1090,6 +1187,29 @@
         .article3 {
             height: 70vh !important;
             margin-left: 15px;
+        }
+    }
+    #tech {
+        .wrapper {
+            width:70%;
+            margin: 0 auto;
+        }
+    }
+    #subs {
+        width: 95%;
+        height: 80%;
+
+        .wrapper p {
+            padding-top: 120px;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        .wrapper input {
+            width: 80%;
+            margin-top: 140px !important;
+        }
+        .wrapper a {
+            width: 80%;
         }
     }
     #footer {

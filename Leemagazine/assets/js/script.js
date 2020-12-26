@@ -1,12 +1,12 @@
-var sidebar = document.querySelector("#sidebar");
-var status = false;
+function toggleNav() {
+    let sidebar = document.querySelector("#sidebar");
+    let toggle = false;
 
-let toggleNav = function() {
-    if (status == false) {
-        sidebar.style.visibility="visible";
-        status = true;
-    } else if (status == true) {
-        sidebar.style.visibility="hidden";
-        status = false;
+    if (toggle == false) {
+        sidebar.style.cssText = "visibility: visible;";
+        toggle = true;
+    } else if (toggle == true) {
+        sidebar.style.cssText = "visibility: hidden;";
+        toggle = false;
     }
 }

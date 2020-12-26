@@ -2,47 +2,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trending Fashion Magazine</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div id="header">
         <div class="logo"><span>Lee</span>Magazine</div>
         <div class="main-nav">
-            <i class="fa fa-bars" onclick="toggleNav()" ></i>
+            <!--<a href="#" onclick="toggleNav()"><img src="assets/images/m12.jpg" width="30px" height="30px" alt=""></a>-->
+            <i class="fa fa-bars" onclick="toggleNav()"></i>
             <i class="fas fa-search"></i>
         </div>
     </div>
     <div id="sidebar">
         <div class="background-img">
-            <ul>
-                <li>Home</li>
-                <li>News</li>
-                <li>Travel</li>
-                <li>Blog</li>
-                <li>About</li>
-            </ul>
+            <div class="wrapper">
+                <ul>
+                    <li>Home</li>
+                    <li>News</li>
+                    <li>Travel</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="news" class="container">
         <h3>Recent <span>News</span></h3>
         <div class="wrapper">
-            <div class="article1">
+            <div class="news_article article1">
                 <div><a href="#">Man In Black Jacket And Brown Hat Standing On Rock Near Lake</a><br><br>
                 <a href="#">Dec.03.2020</a></div>
             </div>
-            <div class="article2">
+            <div class="news_article article2">
                 <div><a href="#">Women Near Pigeons</a> <br><br>
                 <a href="#">Dec.03.2020</a></div>
                 <span class="text">There are many variations that fucuses on presenting</span><br>
                 <span class="date">By john barin Dec 3, 2020</span><br><br>
                 <span class="link">Read More</span><br><br>
             </div>
-            <div class="article3">
+            <div class="news_article article3">
                 <div><a href="#">Man Standing On Railroad Near Plants</a> <br><br>
                 <a href="#">Dec.03.2020</a></div>
                 <span class="text">There are many variations that fucuses on presenting</span><br>
@@ -56,14 +60,14 @@
         <div class="wrapper">
             <div class="article__container1">
                 <div class="section2 article1">
-                    <div><a href="#">Man Holding Camera And Women Playing Violin</a><br>
+                    <div><a href="#">Man Holding Camera And Women Playing Violin</a><br><br>
                         <a href="#">Dec.03.2020</a></div>
                         <span class="text">There are many variations that fucuses on presenting</span><br>
                         <span class="date">By john barin Dec 3, 2020</span><br><br>
                         <a href="#"><span class="link">Read More</span></a><br><br>
                     </div>
                     <div class="section2 article2">
-                        <div><a href="#">Adult Beautiful Breakfast Brunette</a><br>
+                        <div><a href="#">Adult Beautiful Breakfast Brunette</a><br><br>
                         <a href="#">Dec.03.2020</a></div>
                         <span class="text">There are many variations that fucuses on presenting</span><br>
                         <span class="date">By john barin Dec 3, 2020</span><br><br>
@@ -79,28 +83,28 @@
                 </div>
                 <div class="article__container2">
                     <h3>Must <span>Read</span></h3>
-                    <div class="post_item1">
+                    <div class="post post_item1">
                         <div class="img"></div>
                         <div class="content">
                             <p class="text">Group Of Women Dancing On Stage</p><br>
                             <span class="date">By john Brain Dec 3, 2020</span>
                         </div>
                     </div>
-                    <div class="post_item2">
+                    <div class="post post_item2">
                         <div class="img"></div>
                         <div class="content">
                             <p class="text">Photo Of Man Wearing Astronaut Suit Hanging Near Cameras</p><br>
                             <span class="date">By john Brain Dec 3, 2020</span>
                         </div>
                     </div>
-                    <div class="post_item3">
+                    <div class="post post_item3">
                         <div class="img"></div>
                         <div class="content">
                             <p class="text">Pencake With Chocolate Syrup On Ceramic Plate</p><br>
                             <span class="date">By john Brain Dec 3, 2020</span>
                         </div>
                     </div>
-                    <div class="post_item4">
+                    <div class="post post_item4">
                         <div class="img"></div>
                         <div class="content">
                             <p class="text">White And Pink Pelated Flowers On Metal Fence Near Concreat</p><br>
@@ -116,13 +120,13 @@
                 <div class="wrapper">
                     <div class="article__container1">
                         <div class="style1">
-                            <div><a href="#">Sitting People Beside Table Inside Room</a>
+                            <div><a href="#">Sitting People Beside Table Inside Room</a><br><br>
                                 <a href="#">Dec.03.2020</a></div>
                                 <span class="text">There are many variations that fucuses on presenting</span><br>
                                 <span class="date">By john barin Dec 3, 2020</span><br><br>
                             </div>
                             <div class="style2">
-                                <div><a href="#">Tidy Room Filled with furniture</a>
+                                <div><a href="#">Tidy Room Filled with furniture</a><br><br>
                                 <a href="#">Dec.03.2020</a></div>
                                 <span class="text">There are many variations that fucuses on presenting</span><br>
                                 <span class="date">By john barin Dec 3, 2020</span><br><br>
@@ -130,23 +134,23 @@
                         </div>
                         <div class="article__container2">
                             <h3>Top <span>Categories</span></h3>
-                            <div class="category1">
+                            <div class="cat category1">
                                 <div class="img"></div>
                                 <div><p>Fashion</p></div>
                             </div>
-                            <div class="category2">
+                            <div class="cat category2">
                                 <div class="img"></div>
                                 <div><p>Culture</p></div>
                             </div>
-                            <div class="category3">
+                            <div class="cat category3">
                                 <div class="img"></div>
                                 <div><p>Lifestyle</p></div>
                             </div>
-                            <div class="category4">
+                            <div class="cat category4">
                                 <div class="img"></div>
                                 <div><p>Food</p></div>
                             </div>
-                            <div class="category5">
+                            <div class="cat category5">
                                 <div class="img"></div>
                                 <div><p>Business</p></div>
                             </div>
@@ -264,7 +268,7 @@
                 <h3>Tech And <span>Gadgets</span></h3>
                 <div class="wrapper">
                     <div class="parent">
-                        <div class="article1"></div>
+                        <div class="tech article1"></div>
                         <div class="content">
                             <span class="text">There are many variations that fucuses on presenting</span><br>
                             <span class="date">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.Nulla quis lorem neque, mattis venenatis lectus. </span><br><br>
@@ -273,7 +277,7 @@
                     </div>
                         
                     <div class="parent">
-                        <div class="article2"></div>
+                        <div class="tech article2"></div>
                         <div class="content">
                             <span class="text">There are many variations that fucuses on presenting</span><br>
                             <span class="date">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.Nulla quis lorem neque, mattis venenatis lectus. </span><br><br>
@@ -282,7 +286,7 @@
                     </div>
 
                     <div class="parent">
-                        <div class="article3"></div>
+                        <div class="tech article3"></div>
                         <div class="content">
                             <span class="text">There are many variations that fucuses on presenting</span><br>
                             <span class="date">Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.Nulla quis lorem neque, mattis venenatis lectus. </span><br><br>
@@ -415,7 +419,134 @@
                 <p>&copy 2020 All Rights Reserved. Developed by <span style="color:blue">Likhaya Kulati &nbsp; <a href="#"><img src="assets/images/movetop.png" alt="" style="background-color:blue"></a></span></p>
             </div>
         </div>
-    
+
+
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.news_article',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px'
+            });
+            sr.reveal('.section2',{
+                duration: 2500,
+                origin: 'left',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('.post',{
+                duration: 2500,
+                origin: 'top',
+                distance: '300px',
+                delay: 1000,
+                viewFactor: 0.2
+            });
+            sr.reveal('.article__container1',{
+                duration: 2500,
+                origin: 'left',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('.article__container2 .cat',{
+                duration: 2500,
+                origin: 'top',
+                distance: '300px',
+                delay: 1000
+            });
+            sr.reveal('#culture .parent',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('#beauty',{
+                duration: 2500,
+                origin: 'left',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('#tech .tech',{
+                duration: 2500,
+                origin: 'top',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('#tech .content',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                delay: 1000
+            });
+            sr.reveal('#top_cat .article1',{
+                duration: 2500,
+                origin: 'left',
+                distance: '300px'
+            });
+            sr.reveal('#top_cat .article2',{
+                duration: 2500,
+                origin: 'right',
+                distance: '300px',
+                delay: 1500
+            });
+            sr.reveal('#top_cat .article3',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                delay: 2500
+            });
+            sr.reveal('#trends .parent .article1',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('#trends .parent .article2',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2,
+                delay: 1500
+            });
+            sr.reveal('#trends .parent .article3',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2,
+                delay: 2500
+            });
+            sr.reveal('.topics .parent',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('.info .container__1',{
+                duration: 2000,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('.info .container__2',{
+                duration: 2000,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2,
+                delay: 1000
+            });
+            sr.reveal('#footer .aboutus',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2
+            });
+            sr.reveal('#footer .aboutus .fab',{
+                duration: 2500,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.2,
+                delay: 2000
+            });
+        </script>
+    <script src="assets/js/script.js"></script>
 </body>
-<script src="assets/js/script.js"></script>
 </html>
