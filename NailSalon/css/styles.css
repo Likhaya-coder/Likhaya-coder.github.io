@@ -620,8 +620,23 @@ footer .copyright span {
  /*-------------------------------Media queries 620-------------------------*/
  @media(max-width: 620px) {
     #landing__page .container {
-        padding: 0 110px;
+        padding: 0 20px;
     }
+
+    #landing__page .container h3 {
+        font-size: 1.3em;
+        text-shadow: 2px 2px 9px black;
+    }
+
+    #landing__page .container p {
+        font-size: 1em;
+        padding: 20px 10px;
+    }
+
+    #landing__page .container a {
+        padding: 25px 30px;
+    }
+
     .container .heading p {
         font-size: 1.3em;
         padding: 10px 0;
