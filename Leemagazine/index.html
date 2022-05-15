@@ -9,25 +9,29 @@
     <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700,800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');</style>
 </head>
 <body>
     <div id="header">
         <div class="logo"><span>Lee</span>Magazine</div>
         <div class="main-nav">
-            <!--<a href="#" onclick="toggleNav()"><img src="assets/images/m12.jpg" width="30px" height="30px" alt=""></a>-->
             <i class="fa fa-bars" onclick="toggleNav()"></i>
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" onclick="toggleSearch()"></i>
+        </div>
+        <div id="search__field">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
         </div>
     </div>
     <div id="sidebar">
         <div class="background-img">
             <div class="wrapper">
                 <ul>
-                    <li>Home</li>
-                    <li>News</li>
-                    <li>Travel</li>
-                    <li>Blog</li>
-                    <li>About</li>
+                    <li><a href="index.html" onclick="toggleNav()"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#Must_Read" onclick="toggleNav()"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="#beauty" onclick="toggleNav()"><i class="fas fa-bus"></i> Travel</a></li>
+                    <li><a href="#trends" onclick="toggleNav()"><i class="fas fa-poll"></i> Fashion</a></li>
+                    <li><a href="#footer" onclick="toggleNav()"><i class="fas fa-user"></i> About</a></li>
                 </ul>
             </div>
         </div>
@@ -81,7 +85,7 @@
                         <a href="#"><span class="link">Read More</span></a><br><br>
                     </div>
                 </div>
-                <div class="article__container2">
+                <div id="Must_Read" class="article__container2">
                     <h3>Must <span>Read</span></h3>
                     <div class="post post_item1">
                         <div class="img"></div>
@@ -157,28 +161,6 @@
                           </div>
                         </div>
                     </div><br><br><br><br>
-                    
-                    <!--<div class="article1">
-                        <div class="img"></div>
-                        <div class="content">
-                            <p>There are many variations that focuses on presenting</p>
-                            <p class="light">By  John Brain Jan 5, 2020</p>
-                        </div>
-                    </div>-->
-                    <!--<div class="small_grid">
-                        <div class="wrapper">
-                            <div class="body">
-                                <div class="img"></div>
-                                <div class="content">
-                                    <p>There are many variations that focuses on presenting</p>
-                                    <p class="light">By  John Brain Jan 5, 2020</p>
-                                </div>
-                            </div>
-                            <div class="sidebar">
-                                <div class="img"></div>
-                            </div>
-                        </div>
-                    </div>-->
 
             <div id="culture">
                 <div class="wrapper">
@@ -424,127 +406,127 @@
         <script>
             window.sr = ScrollReveal();
             sr.reveal('.news_article',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
                 distance: '300px'
             });
             sr.reveal('.section2',{
-                duration: 2500,
+                duration: 1000,
                 origin: 'left',
-                distance: '300px',
+                distance: '100px',
                 viewFactor: 0.2
             });
             sr.reveal('.post',{
-                duration: 2500,
+                duration: 1500,
                 origin: 'top',
-                distance: '300px',
-                delay: 1000,
+                distance: '180px',
+                delay: 300,
                 viewFactor: 0.2
             });
             sr.reveal('.article__container1',{
-                duration: 2500,
+                duration: 1500,
                 origin: 'left',
-                distance: '300px',
-                viewFactor: 0.2
+                distance: '200px',
+                viewFactor: 0.3
             });
             sr.reveal('.article__container2 .cat',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'top',
-                distance: '300px',
-                delay: 1000
+                distance: '100px',
+                delay: 300
             });
             sr.reveal('#culture .parent',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
-                viewFactor: 0.2
+                distance: '100px',
+                viewFactor: 0.3
             });
             sr.reveal('#beauty',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'left',
-                distance: '300px',
-                viewFactor: 0.2
+                distance: '100px',
+                viewFactor: 0.3
             });
             sr.reveal('#tech .tech',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'top',
-                distance: '300px',
-                viewFactor: 0.2
+                distance: '100px',
+                viewFactor: 0.3
             });
             sr.reveal('#tech .content',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
-                delay: 1000
+                distance: '100px',
+                delay: 200
             });
             sr.reveal('#top_cat .article1',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'left',
-                distance: '300px'
+                distance: '100px'
             });
             sr.reveal('#top_cat .article2',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'right',
-                distance: '300px',
-                delay: 1500
+                distance: '100px',
+                delay: 200
             });
             sr.reveal('#top_cat .article3',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
-                delay: 2500
+                distance: '100px',
+                delay: 200
             });
             sr.reveal('#trends .parent .article1',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
-                viewFactor: 0.2
+                distance: '100px',
+                viewFactor: 0.3
             });
             sr.reveal('#trends .parent .article2',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
-                viewFactor: 0.2,
-                delay: 1500
+                distance: '200px',
+                viewFactor: 0.3,
+                delay: 200
             });
             sr.reveal('#trends .parent .article3',{
-                duration: 2500,
+                duration: 1000,
                 origin: 'bottom',
-                distance: '300px',
+                distance: '100px',
                 viewFactor: 0.2,
-                delay: 2500
+                delay: 300
             });
             sr.reveal('.topics .parent',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
+                distance: '100px',
                 viewFactor: 0.2
             });
             sr.reveal('.info .container__1',{
-                duration: 2000,
+                duration: 1100,
                 origin: 'bottom',
-                distance: '300px',
+                distance: '100px',
                 viewFactor: 0.2
             });
             sr.reveal('.info .container__2',{
-                duration: 2000,
+                duration: 1000,
                 origin: 'bottom',
-                distance: '300px',
+                distance: '100px',
                 viewFactor: 0.2,
-                delay: 1000
+                delay: 1100
             });
             sr.reveal('#footer .aboutus',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
+                distance: '100px',
                 viewFactor: 0.2
             });
             sr.reveal('#footer .aboutus .fab',{
-                duration: 2500,
+                duration: 1300,
                 origin: 'bottom',
-                distance: '300px',
-                viewFactor: 0.2,
-                delay: 2000
+                distance: '100px',
+                viewFactor: 0.3,
+                delay: 300
             });
         </script>
     <script src="assets/js/script.js"></script>

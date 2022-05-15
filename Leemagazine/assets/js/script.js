@@ -1,12 +1,30 @@
-function toggleNav() {
-    let sidebar = document.querySelector("#sidebar");
-    let toggle = false;
+let toggleStatus = false;
+let getLinks = document.querySelectorAll("#sidebar ul li a");
 
-    if (toggle == false) {
-        sidebar.style.cssText = "visibility: visible;";
-        toggle = true;
-    } else if (toggle == true) {
-        sidebar.style.cssText = "visibility: hidden;";
-        toggle = false;
+let toggleNav = function() {
+    let getSidebar = document.querySelector("#sidebar");
+    let getOverlay = document.querySelector("#sidebar .wrapper");
+    
+    if (toggleStatus == false) {
+        getSidebar.style.cssText = "visibility: visible;";
+        getSidebar.style.cssText = "left: 0;";
+        getOverlay.style.cssText = "left: 0;";
+        toggleStatus = true;
+    } else if (toggleStatus == true) {
+        getSidebar.style.cssText = "visibility: hidden;";
+        getSidebar.style.cssText = "left: -350;";
+        getOverlay.style.cssText = "left: -350;";
+        toggleStatus = false;
+    }
+}
+
+let toggleSearch = function() {
+    let searchField = document.querySelector("#search__field");
+    if (toggleStatus == false) {
+        searchField.style.cssText="display: block";
+        toggleStatus = true;
+    } else if (toggleStatus == true) {
+        searchField.style.cssText="display: none";
+        toggleStatus = false;
     }
 }

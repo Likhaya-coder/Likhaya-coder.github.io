@@ -100,19 +100,7 @@
         position: relative;
         transition-property: transform;
         transition-duration: 1s;
-        //visibility: hidden;
     }
-    /*.article1 div a{
-        position: relative;
-        animation-name: imgText;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        //visibility: hidden;
-    }
-    @keyframes imgText {
-        0% {top: -30px;}
-        100% {top: 20px;}
-    }*/
     .article2 {
         background-image: url(../images/grid7.jpg);
         @include background;
@@ -602,9 +590,6 @@
     h3 {
         padding-top: 0px;
     }
-    /*.parent {
-        display: flex;
-    }*/
     .article1 {
         background-image: url(../images/grid16.jpg);
         @include background;

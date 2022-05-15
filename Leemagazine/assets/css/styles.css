@@ -22,27 +22,21 @@ ul, li, a {
   list-style-type: none;
 }
 
-/*@include transparency {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}*/
 #header {
   width: 100%;
   height: 90px;
   background-color: #1808f3e7;
   position: fixed;
-  z-index: 1000;
+  z-index: 1100;
 }
+
 #header .logo {
   font-size: 3rem;
-  font-family: pristina;
+  font-family: 'Ms Madi', cursive;
   color: #fff;
   line-height: 90px;
   padding-left: 10px;
+  font-weight: 900;
 }
 #header h1 {
   cursor: pointer;
@@ -54,56 +48,95 @@ ul, li, a {
   color: white;
   font-size: 1.4rem;
 }
-#header .main-nav .fas, #header .main-nav .fa {
+#header .main-nav .fas,
+#header .main-nav .fa {
   padding: 0 7px;
   cursor: pointer;
 }
 
+#search__field {
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(241, 223, 223);
+  padding-bottom: 2px;
+  padding-left: 2px;
+  box-shadow: 1px 1px 9px grey;
+  display: none;
+  transition: all 300ms ease-in-out;
+}
+
+#search__field input {
+  width: calc(100% - 60px);
+  height: 40px;
+  padding: 5px;
+  font-size: 18px;
+  box-shadow: 1px 1px 7px grey;
+  border-top: none;
+  margin-top: 3px;
+}
+
+#search__field button {
+  width: 55px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 1px 1px 7px grey;
+}
+
 #sidebar {
-  width: 100%;
+  width: 70%;
   height: calc(100% - 90px);
   position: fixed;
   top: 90px;
-  left: 0;
+  left: -350;
   bottom: 0;
   right: 0;
-  visibility: hidden;
+  visibility: visible;
   z-index: 1000;
-  transition: all ease-in-out 0.9s;
+  transition: all 100ms ease-in-out;
 }
 #sidebar .wrapper {
-  width: 100%;
-  height: 100vh;
+  width: 70%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
+  position: fixed;;
   top: 90px;
-  left: 0;
+  left: -350;
   bottom: 0;
   right: 0;
+  transition: all 100ms ease-in-out;
 }
 #sidebar .background-img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url(../images/grid3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 #sidebar ul {
-  padding-top: 10.3rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5rem;
 }
 #sidebar ul li {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 20px;
-  font-size: 1.6rem;
-  text-align: center;
-  padding-bottom: 20px;
-  text-transform: uppercase;
+  list-style: none;
 }
-#sidebar ul li:hover {
+
+#sidebar ul li a {
+  display: block;
+  font-weight: 400;
   color: #fff;
+  text-align: left;
+  font-size: 1.4rem;
+  padding: 2px 20px;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
+
+#sidebar ul li a:hover {
+  background-color: rgb(29, 100, 158);
+  padding: 30px 20px;
+  transition: all 300ms ease-in-out;
   cursor: pointer;
 }
 
@@ -127,17 +160,6 @@ ul, li, a {
   background-color: #FFF;
   padding: 30px;
   margin-bottom: 30px;
-  /*.article1 div a{
-      position: relative;
-      animation-name: imgText;
-      animation-duration: 3s;
-      animation-fill-mode: forwards;
-      //visibility: hidden;
-  }
-  @keyframes imgText {
-      0% {top: -30px;}
-      100% {top: 20px;}
-  }*/
 }
 #news h3 {
   padding-top: 160px;
@@ -182,7 +204,7 @@ ul, li, a {
   border-radius: 4px;
   margin-bottom: 160px;
 }
-#news .artticle {
+#news .article {
   background-image: url(../images/grid6.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -1310,7 +1332,65 @@ ul, li, a {
   margin-top: 0px;
 }
 
+@media screen and (min-width: 500px) {
+  #sidebar {
+    width: 60%;
+  }
+  #sidebar .wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #sidebar {
+    width: 45%;
+  }
+  #sidebar .wrapper {
+    width: 45%;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  #sidebar {
+    width: 40%;
+  }
+  #sidebar .wrapper {
+    width: 40%;
+  }
+  #sidebar .background-img {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/grid3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  #sidebar ul {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+  #sidebar ul li {
+    list-style: none;
+  }
+  
+  #sidebar ul li a {
+    display: block;
+    font-weight: 400;
+    color: #fff;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 2px 20px;
+    letter-spacing: 2px;
+    margin: 30px 0;
+  }
+  
+  #sidebar ul li a:hover {
+    background-color: rgb(29, 100, 158);
+    padding: 30px 20px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+  }
   #culture .wrapper {
     display: flex;
   }
@@ -1491,6 +1571,12 @@ ul, li, a {
   }
 }
 @media screen and (min-width: 900px) {
+  #sidebar {
+    width: 25%;
+  }
+  #sidebar .wrapper {
+    width: 25%;
+  }
   #news {
     max-width: 90%;
     margin: 0 auto;
@@ -1536,6 +1622,12 @@ ul, li, a {
   }
 }
 @media screen and (min-width: 990px) {
+  #sidebar {
+    width: 25%;
+  }
+  #sidebar .wrapper {
+    width: 25%;
+  }
   #article .one {
     position: relative;
     right: 390px;
@@ -1760,11 +1852,11 @@ ul, li, a {
     font-weight: 700;
   }
   #subs .wrapper input {
-    width: 80%;
+    width: 50%;
     margin-top: 140px !important;
   }
   #subs .wrapper a {
-    width: 80%;
+    width: 50%;
   }
 
   #footer .container .wrapper .aboutus {
