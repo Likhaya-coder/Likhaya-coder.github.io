@@ -624,7 +624,7 @@ footer .copyright span {
     }
 
     #landing__page .container h3 {
-        font-size: 1.3em;
+        font-size: 2.4em;
         text-shadow: 2px 2px 9px black;
     }
 
@@ -663,17 +663,23 @@ footer .copyright span {
     #services .massage h3, #services .paraffin__wax h3, #services .skin__care h3, #services .nail__art h3 {
         font-size: 1.4em;
     }
+
+    #gallery .container .gallery-img {
+        height: 200px;
+    }
+
     #help__section {
         height: 60vh;
     }
 
     #help__section .fixed__background .container {
-        width: 60%;
+        width: 90%;
         height: 80%;
     }
 
     #help__section .fixed__background .container .heading {
-        padding: 0 0;
+        padding: 0;
+        font-size: 24px;
     }
 
     #help__section .fixed__background .container .content p {
@@ -686,11 +692,16 @@ footer .copyright span {
     }
 
     footer .container .col-md-4 .social__icons .fab {
-        font-size: 1.1em;
+        font-size: 2em;
+        padding-bottom: 40px;
     }
 
     footer .container .col-md-4 .social .social__wrapper .foot_icon_img {
         margin-left: 0 !important;
+    }
+
+    footer .container .col-md-4 .social .social__wrapper .foot_icon_img img {
+        height: 100px;
     }
  }
 
