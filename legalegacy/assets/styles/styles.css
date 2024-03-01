@@ -1,0 +1,314 @@
+body {
+    font-family: "GildaDisplay-Regular";
+    overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 3px 0;
+  margin: 0;
+}
+
+.footer ul li>a:hover {
+  color: #E3AF5A;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.ls-3 {
+    letter-spacing: 2px;
+}
+
+.ls-4 {
+    letter-spacing: 4px;
+}
+
+.text-muted {
+    font-weight: 100;
+    color: #9c9ca7 !important;
+}
+
+.text-logo {
+    color: #E3AF5A;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.content-wrapper {
+    background-color: #111B37;
+}
+
+.navbar .navbar-brand {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #111B37;
+    color: #E3AF5A;
+}
+
+.navbar .navbar-brand p {
+  font-size: 8px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #E3AF5A;
+}
+
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/legal-landing-page.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.navbar-dark, .navbar-dark .bg-dark {
+    background-color: #111B37 !important;
+}
+
+.hero-cards .card {
+    position: relative;
+    top: -60px;
+    background-color: #1C2745;
+    z-index: 5;
+}
+
+.hero-cards .card img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.services-cards .card {
+    background-color: #1C2745;
+}
+
+.services-cards .card img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.lawyer-cards .card {
+    background-color: #1C2745;
+}
+
+.lawyer-cards img:hover {
+    transform: scale(.96);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 800ms ease-in-out;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*     testing    */
+
+.image-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-card .card {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    margin: 10px;
+    background-color: #1C2745;
+    z-index: 1; /* Ensure the card is on top of the image */
+  }
+
+  .testimonial-section {
+    width: auto;
+    height: 100vh;
+    background: url(../images/65326238fc53b335d2f58b5e_About-Hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .testimonial-section .overlay {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .circular-image img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit:fill;
+  }
+
+  .carousel-indicators .active {
+    opacity: 1;
+}
+
+  .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+  }
+
+  .quote-section {
+    opacity: .2;
+  }
+
+  .consultation-section {
+    width: 100%;
+    height: 80vh;
+    background: #1C2745;
+  }
+
+  .consultation-image {
+    width: 100%;
+    height: 100%;
+    background: url(../images/consultation.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .consultation-email-section {
+    background-color: #111B37;
+  }
+
+  .consultation-email-section input {
+    border: none;
+    color: #f1f3f5;
+    background-color: #101d41;
+  }
+
+  .consultation-email-section input:focus {
+    border: none;
+    box-shadow: none;
+    background-color: #101d41;
+  }
+
+  .consultation-email-section a {
+    background-color: #d2ab6d;
+    color: transparent;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.card-subtitle {
+  color:#E3AF5A;
+}
+
+.fa-brands, .fab, .fa-solid, .fas {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  padding: 0 5px;
+}
+
+.footer {
+  background-color: #1C2745;
+}
+
+.copyright span {
+  color: #E3AF5A;
+}
+
+@media (max-width: 768px) {
+  .start-sm-0 {
+    width: 80%;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 90px;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 40px;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+  }
+  .consultation-section {
+    width: 100vw;
+  }
+  .consultation-image {
+    margin-top: 20px;
+    height: 40vh;
+  }
+  .sm-text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .start-md-0 {
+    top: calc(100vh - 80vh) !important;
+    width: 80%;
+  }
+  .rounded-pill {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .text-logo-md {
+    font-size: 22px !important;
+  }
+  .display-md-3 {
+    font-size: 62px;
+  }
+  .fs-md-3 {
+    font-size: 22px !important;
+  }
+  .hero-cards .card {
+    top: -120px;
+  }
+  .testimonial-section {
+    height: 50vh;
+  }
+  .consultation-section {
+    height: 32vh;
+  }
+  .consultation-image {
+    display: none;
+  }
+}
